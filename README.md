@@ -21,4 +21,7 @@ The template can be created so that it is available to all your OpenShift projec
 After doing this, when you use the option 'Add to Project', you should see 'websphere-liberty-example' as one of the listed options
 
 ## To add to your OpenShift v3 project
+When you add the 'websphere-liberty-example' to your OpenShift project, the main parameter to change is 'SOURCE_REPOSITORY_URL'. By default it points to this GitHub repository. If you have forked this repo and have your own WAR (or even modified the Dockerfile) remember to point this parameter to your forked repo.
 
+1. The template will use the DockerFile from the repository
+2. The dockerfile, in turn, assumes there's an 'app' sub-directory, which contains your WAR
